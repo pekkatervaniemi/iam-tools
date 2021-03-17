@@ -30,8 +30,3 @@ resource "aws_iam_group" "developers" {
 }
 
 
-#resource "aws_lb_listener_certificate" "lc" {
-#  listener_arn    = aws_lb_listener.listener-https.arn
-#  for_each = toset(local.certlist)
-#    certificate_arn = each.value
-#}
